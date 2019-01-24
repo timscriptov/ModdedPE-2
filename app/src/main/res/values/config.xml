@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_version">1.0</string>
+	<string-array name="target_mcpe_versions">
+		<item>^1.2.0.7</item>
+	</string-array>
+	<string name="target_mcpe_version_info">1.2.0.7</string>
+	<string name="app_name">ModdedPE</string>
+	<string name="app_name_demo">ModdedPE Demo</string>
+	<string name="app_name_short">ModdedPE</string>
+	<string name="app_name_short_demo">ModdedPE Demo</string>
+</resources>

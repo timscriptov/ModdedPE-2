@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.listerily.moddedpe">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+	<uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="com.listerily.moddedpe.ModdedPEApplication"
+        android:hasCode="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/StandardTheme">
+
+        <meta-data
+            android:name="xperiaplayoptimized_content"
+            android:resource="@string/xperiaplayoptimized_content" />
+
+        <meta-data
+            android:name="game_display_name"
+            android:resource="@string/app_name" />
+
+        <meta-data
+            android:name="game_icon"
+            android:resource="@mipmap/ic_launcher" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+		
+        <meta-data
+            android:name="net.hockeyapp.android.appIdentifier"
+            android:value="@string/hockeyapp_android_id" />
+
+        <activity
+            android:name="com.listerily.moddedpe.app.ManageNModActivity"
+            android:label="@string/manage_nmod_title"
+            android:theme="@style/StandardTheme"/>
+
+        <activity
+            android:name="com.listerily.moddedpe.app.SplashesActivity"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.listerily.moddedpe.app.MinecraftActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/FullScreenTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="launcher-core" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="minecraft" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.listerily.moddedpe.app.NModDescriptionActivity"
+            android:theme="@style/StandardTheme"/>
+
+        <activity
+            android:name="com.listerily.moddedpe.app.NModLoadFailActivity"
+            android:label="@string/nmods_load_failed_title"
+            android:launchMode="singleTask"
+            android:theme="@style/StandardTheme"/>
+
+        <activity
+            android:name="com.listerily.moddedpe.app.PreloadActivity"
+            android:label="@string/prestart_title"
+            android:theme="@style/FullScreenTheme"/>
+
+        <activity
+            android:name="com.listerily.moddedpe.app.InstallNModActivity"
+            android:icon="@drawable/mcd_add_pack"
+            android:label="@string/import_nmod_title"
+            android:theme="@style/StandardTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.mcnmod"
+                    android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.zip"
+                    android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.apk"
+                    android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.nmod"
+                    android:scheme="file" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.listerily.moddedpe.app.MainActivity"
+            android:label="@string/main_activity_title"
+            android:theme="@style/StandardTheme.NoActionBar"/>
+
+    </application>
+
+</manifest>

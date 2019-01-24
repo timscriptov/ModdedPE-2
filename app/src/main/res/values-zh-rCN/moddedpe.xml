@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--Titles-->
+	<string name="menu_title">菜单</string>
+	<string name="manage_nmod_title">管理NMod</string>
+	<string name="settings_title">设置</string>
+	<string name="about_title">关于</string>
+	<string name="main_title">主页</string>
+	<string name="nmod_picker_file_title">选择NMod（存储）</string>
+	<string name="nmod_picker_package_title">选择NMod (应用)</string>
+	<string name="prestart_title">初始化游戏</string>
+	<string name="nmods_load_failed_title">一些NMod出错了&#8230;</string>
+	<string name="import_nmod_title">导入NMod</string>
+	<string name="dir_picker_title">选择文件夹</string>
+	<string name="pkg_picker_title">选择包名</string>
+	
+	<!--NMod-->
+	<string name="load_fail_title">加载失败！</string>
+	<string name="nmod_importing_title">NMod导入中&#8230;</string>
+	<string name="nmod_import_failed">导入NMod失败</string>
+	<string name="nmod_import_failed_message_unexpected">导入时造成了未知错误。\n点击“错误信息”以查看更多~</string>
+	<string name="nmod_import_failed_message_decode">ZIP解码失败，请保证您选择了一个ZIP编码的文件。</string>
+	<string name="nmod_import_failed_message_no_manifest">未找到NMod清单文件（nmod_manifest.json）。</string>
+	<string name="nmod_import_failed_message_io_exception">文件读写出现错误。</string>
+	<string name="nmod_import_failed_message_manifest_json_syntax_error">清单文件存在语法错误，导致读取失败。请点击“查看更多”以浏览详细信息。</string>
+	<string name="nmod_import_failed_message_invalid_package_name">NMod的包名不符合包名规则。</string>
+	<string name="nmod_import_failed_message_no_package_name">清单文件内未提供包名。作为一个免安装版NMod，是必须在清单内提供包名的（package_name）。</string>
+	<string name="nmod_import_failed_message_inequal_package_name">NMod包内存在包名歧义（AndroidManifest.xml和nmod_manifest.xml中包名不相同）。</string>
+	<string name="nmod_import_failed_message_redundant_manifest">NMod包内存在两个清单文件（nmod_manifest.json）请删去一个。</string>
+	<string name="nmod_import_failed_button_full_info">错误信息</string>
+	<string name="nmod_import_failed_full_info_title">错误信息</string>
+	<string name="nmod_import_failed_full_info_message">错误类型：\n%1$s\n错误信息：\n%2$s</string>
+	<string name="nmod_import_replaced_title">已覆盖</string>
+	<string name="nmod_import_replaced_message">新导入的NMod已替换同包名的旧NMod。</string>
+	<string name="nmod_import_succeed_title">导入成功</string>
+	<string name="nmod_import_succeed_message">导入成功！</string>
+	<string name="load_fail_msg">错误类型：\n%1$s\n错误信息：\n%2$s</string>
+	<string name="nmod_add_new">添加新的</string>
+	<string name="nmod_export">导出</string>
+	<string name="nmod_add_new_title">添加新的&#8230;</string>
+	<string name="nmod_add_new_message">这里有两种方式来添加新的NMod：选一个吧↓</string>
+	<string name="nmod_add_new_pick_installed">已安装中</string>
+	<string name="nmod_add_new_pick_storage">外部存储</string>
+	<string name="nmod_enabled_title">有效NMod</string>
+	<string name="nmod_disabled_title">可用NMod</string>
+	<string name="nmod_description_description_title">介绍</string>
+	<string name="nmod_description_about_title">关于</string>
+	<string name="nmod_description_about_author">作者：</string>
+	<string name="nmod_description_about_version_name">版本名：</string>
+	<string name="nmod_description_unknow">未填写</string>
+	<string name="nmod_description_whatsnew_title">新增</string>
+	<string name="nmod_delete_title">删除NMod</string>
+	<string name="nmod_delete_message">如果您删除了这个NMod，它可能会消失很长很长长长长一段时间呢&#8230;真的要删除么？</string>
+	<string name="nmod_imported_view_more">点击按钮以浏览更多ヽ(´•ω•`)↓</string>
+	<string name="nmod_import_failed_view_more">点击按钮查看更多~</string>
+	
+	<!--About-->
+	<string name="about_license">开放源代码许可</string>
+	<string name="about_view_privacy_policy">隐私权政策</string>
+	<string name="about_copyright_owner">By Listerily</string>
+	<string name="about_author"></string>
+	<string name="about_translators">翻译人员</string>
+	<string name="about_view_github">Github页</string>
+	<string name="about_view_nmod_api">查看NModAPI</string>
+	<string name="about_translators_message">参加过本语言翻译的人员：\nModelPart</string>
+	
+	<!--Preferences-->
+	<string name="preferences_title">设置</string>
+	<string name="preferences_title_launcher">启动器</string>
+	<string name="preferences_title_safe_mode">安全模式</string>
+	<string name="preferences_summary_safe_mode">禁用所有的NMod</string>
+	<string name="preferences_title_data_saved_path">数据目录</string>
+	<string name="preferences_summary_data_saved_path">改变游戏存储数据的文件夹</string>
+	<string name="preferences_title_game_pkg_name">MinecraftPE包名</string>
+	<string name="preferences_summary_game_pkg_name">在这里切换启动包</string>
+	<string name="preferences_update_message_data_path">成功设置数据目录：%1$s</string>
+	<string name="preferences_update_message_reset_data_path">成功设置数据目录到默认值√</string>
+	<string name="preferences_update_message_pkg_name">成功设置包名：%1$s</string>
+	<string name="preferences_update_message_reset_pkg_name">成功设置包名到默认值√</string>
+	<string name="preferences_title_app">应用程序</string>
+	<string name="preferences_title_about">关于</string>
+	<string name="preferences_summary_about">ModdedPE食用指北</string>
+	<string name="preferences_title_language">语言</string>
+	<string name="preferences_summary_language">我们支持许多语言呢</string>
+	
+	<!--Open Game Dialog-->
+	<string name="opengame_loading_blocks_message">一个方块，两个方块，三个方块……</string>
+	<string name="opengame_loading">等待游戏开启&#8230;</string>
+	<string name="preloading_initing">初始化启动器</string>
+	<string name="preloading_initing_info">--NModAPI版本：%1$s\n--MinecraftPE版本：%2$s</string>
+	<string name="preloading_initing_info_safe_mode">--安全模式开启\n--MinecraftPE版本：%1$s</string>
+	<string name="preloading_initing_loading_libs">加载动态链接库</string>
+	<string name="preloading_loading_lib_substrate">--加载libsubstrate.so</string>
+	<string name="preloading_loading_lib_game_launcher">--加载libpesdk-game-launcher.so</string>
+	<string name="preloading_loading_lib_fmod">--加载libfmod.so</string>
+	<string name="preloading_loading_lib_minecraftpe">--加载libminecraftpe.so</string>
+	<string name="preloading_loading_lib_pesdk">--加载libpesdk.so</string>
+	<string name="preloading_initing_loading_libs_done">加载动态链接库完成</string>
+	<string name="preloading_nmod_start_loading">开始装载NMod</string>
+	<string name="preloading_nmod_loaded">--已装载：%1$s</string>
+	<string name="preloading_nmod_finish_loading">装载NMod完成</string>
+	<string name="preloading_nmod_loaded_failed">--装载失败：%1$s</string>
+	<string name="preloading_finished">正在打开游戏</string>
+	
+	<string-array name="preloading_tips_text">
+		<item>你造么，APK类型的NMod不安装也可以导入的呢( ･_･)</item>
+		<item>其实ModdedPE是作者一边女装一边写的呢）</item>
+		<item>ModdedPE始终无广告，如果您发现被恶意植入，请向我们联系~</item>
+		<item>其实NMod全称是Native-Mod啦~（才不是Naive-Mod什么的！</item>
+		<item>你说ModdedPE会加广告？不，可，能！</item>
+		<item>如果您可以登陆GooglePlay，欢迎给我们贡献小小的一个下载量（捂脸逃</item>
+		<item>一起来开发NMod吧！（关于->NModAPI</item>
+		<item>NMod是C++和JSON做的哦</item>
+		<item>欢迎微博关注@ModelPart！</item>
+		<item>ModdedPE能导入JS?tan270°</item>
+		<item>文件管理器点击*.zip,*.mcnmod,*.apk,*.nmod可以快速导入NMod~</item>
+		<item>再这样玩游戏下去你吃枣药丸（划去（涂黑</item>
+		<item>ModdedPE不限转载_(:з」∠)_，不要再问了</item>
+		<item>其实你可以把NModAPI用到自己的程序里面~（关于->NModAPI</item>
+		<item>想把ModdedPE在某个论坛里面分享？那当然是可以的啦~</item>
+		<item>你造吗，主页左右滑动可以空降到另一个页面( • ̀ω•́ )✧</item>
+		<item>多人游戏使用NMod时每一位玩家都需要安装哦~</item>
+		<item>NMod需要点击按钮“+”才能被加载</item>
+	</string-array>
+	
+	<!--Pick NMod from installed-->
+	<string name="pick_nmod_loading">加载NMod中&#8230;</string>
+	
+	<!--Main Activity-->
+	<string name="main_play">开始游戏</string>
+	<string name="main_reloading_title">正在刷新……</string>
+	<string name="main_default_minecraft_title">我的世界：原版</string>
+	<string name="no_available_mcpe_version_found">ModdedPE所支持的游戏版本是%2$s，然而ModdedPE只发现了版本为%1$s的游戏。请尝试更新游戏版本。点击“跳过”仍然可以打开游戏，但可能会造成游戏崩溃或启动器报错。</string>
+	<string name="no_available_mcpe_version_found_title">版本不支持</string>
+	<string name="no_available_mcpe_version_continue">跳过</string>
+	<string name="safe_mode_on_title">安全模式已开启</string>
+	<string name="safe_mode_on_message">小提示：安全模式已开启，ModdedPE将不会加载任何NMod哦。</string>
+	<string name="no_mcpe_found">ModdedPE没有在您的设备上发现Minecraft。ModdedPE是游戏Minecraft的第三方启动器，您必须购买安装Minecraft才能继续游戏。\n如果您的确安装了Minecraft，请尝试切换启动包或者清除ModdedPE的应用数据。</string>
+	<string name="no_mcpe_found_title">找不到Minecraft</string>
+	
+	<!--Manage NMods-->
+	<string name="manage_nmod_no_nmod_found">看样子这台设备上还没有安装任何NMod呢&#8230;&#8230;</string>
+	
+	<!--Dir Picker-->
+	<string name="dir_picker_reset_warning_title">重置路径</string>
+	<string name="dir_picker_reset_warning_message">真的想把数据路径设为默认值么？</string>
+	
+	<!--Pkg Picker-->
+	<string name="pkg_picker_not_found">未找到任何已安装包。\n请确认权限是否被拒绝使用_(:з」∠)_</string>
+	<string name="pick_pkg_loading">正在加载已安装包&#8230;</string>
+	<string name="pick_tips_title">提示</string>
+	<string name="pick_tips_message">确定把启动包换为%1$s[%2$s]么？ModdedPE将会重启来完成这一操作。</string>
+	<string name="pick_tips_reset_message">确定把启动包重置为默认值么？ModdedPE将会重启来完成这一操作。</string>
+
+	<!--Launch Failed-->
+	<string name="launch_failed_title">打开游戏失败</string>
+	<string name="launch_failed_message">抱歉，ModdeddPE在打开游戏时触发了一个错误，导致游戏启动器崩溃。如果仍然出现这个问题，请尝试清除ModdedPE的应用数据。\n——错误信息：%1$s</string>
+
+	<!--Enable Warnings-->
+	<string name="enable_warning_unsupported_title">版本不支持！</string>
+	<string name="enable_warning_unsupported_message">NMod %1$s暂未支持您安装的MinecraftPE %2$s。</string>
+	<string name="enable_warning_unsupported_message_if_next">NMod %1$s暂未支持您安装的MinecraftPE %2$s。你可以启用它，但是可能会造成错误或者崩溃。</string>
+
+	<!--Permissions-->
+	<string name="permission_grant_failed_title">获取权限失败</string>
+	<string name="permission_grant_failed_message">无法获取权限：读取外部存储。请在系统设置页面授予ModdedPE相关权限。</string>
+    <string name="activity_install_nmod_loading">Loading NMod</string>
+</resources>

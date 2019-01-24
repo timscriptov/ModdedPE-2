@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<com.listerily.mcdesign.widget.ProgressView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_centerInParent="true"
+		android:id="@+id/nmod_importer_loading_progress_bar"/>
+
+	<android.support.v7.widget.AppCompatTextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:text="@string/nmod_importing_title"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/nmod_importer_loading_progress_bar"
+		android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
+

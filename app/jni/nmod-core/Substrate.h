@@ -1,0 +1,1 @@
+extern void MSHookFunction(void *symbol, void *replace, void **result);
