@@ -14,4 +14,5 @@ Open Source NModAPI<br>
 <https://github.com/TimScriptov/NModAPI>
 
 # Current Collaborators
-@ModelPart @Listerily @uebian @TimScriptov<br>
+Иван Тимашков<br>
+Listerily<br>
