@@ -1,5 +1,20 @@
+/*
+ * Copyright (C) 2018 - 2019 Тимашков Иван
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.listerily.moddedpe.app;
-//415
+
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -412,7 +427,7 @@ public class MainActivity extends DesignActivity
                 CardView warningView = (CardView) holder.itemView;
                 ((AppCompatImageView) warningView.findViewById(R.id.main_item_nmod_icon)).setImageBitmap(nmod.getIcon());
                 ((AppCompatTextView) warningView.findViewById(R.id.main_item_nmod_name)).setText(nmod.getManifest().name);
-//                if()
+                if()
                 ((AppCompatTextView) warningView.findViewById(R.id.main_item_nmod_summary)).setText(R.string.main_item_unsupported_game_not_found);
                 warningView.setOnClickListener(new View.OnClickListener()
                 {

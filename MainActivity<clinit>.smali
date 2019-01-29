@@ -1,0 +1,21 @@
+const/4 v0 0 
+sput-object v0 Lcom/mojang/minecraftpe/MainActivity;->mInstance:Lcom/mojang/minecraftpe/MainActivity;
+const/4 v0 0 
+sput-boolean v0 Lcom/mojang/minecraftpe/MainActivity;->mHasStoragePermission:Z
+const/4 v0 0 
+sput-boolean v0 Lcom/mojang/minecraftpe/MainActivity;->_isPowerVr:Z
+const/4 v0 1 
+sput v0 Lcom/mojang/minecraftpe/MainActivity;->RESULT_PICK_IMAGE:I
+const/4 v0 2 
+sput v0 Lcom/mojang/minecraftpe/MainActivity;->RESULT_GOOGLEPLAY_PURCHASE:I
+const-string v0 "fmod"
+invoke-static {v0} Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+const-string v0 "minecraftpe"
+invoke-static {v0} Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+const-string v0 "nmod-core"
+invoke-static {v0} Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+const-string v0 "launcher-core"
+invoke-static {v0} Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+const-string v0 "substrate"
+invoke-static {v0} Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+return-void
