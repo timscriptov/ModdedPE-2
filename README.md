@@ -1,3 +1,4 @@
+[![License Info](https://img.shields.io/badge/license-GNU_GPLv3-blue.svg?style=flat-square)](https://github.com/TimScriptov/ModdedPE-2)
 # ModdedPE
 ![Screenshot](Art/title_logo.png)
 --------
